@@ -16,23 +16,30 @@ One of the most effective approaches uses Recurrent Neural Networks (RNNs), espe
 Input handling
 
 1  Missing Data Handling
+
   -> Check for null or missing values in the dataset (e.g., price, volume, timestamp).
   -> Use methods like forward-fill, backward-fill, or interpolation to handle gaps.
 2  Data Type Validation
+
    -> Ensure numeric columns (e.g., 'Open', 'Close', 'High', 'Low', 'Volume') are in the correct format.
    -> Convert date fields to proper datetime objects.
 3  Range Checks
+
    -> Verify that price values are non-negative and within realistic bounds.
    -> Remove or flag outliers that fall far outside expected ranges.
 4  Time Series Consistency
+
    -> Ensure data is in chronological order without duplicate or missing timestamps.
    -> Check for equal time intervals (e.g., hourly, daily).
 5  Normalization/Scaling
+
    -> Normalize features to a common scale (especially important for machine learning models like neural networks).
    -> Common techniques: Min-Max scaling, Z-score standardization.
 6  Duplicate Records
+
    -> Detect and remove any repeated rows in the dataset.
 7  Feature Validity
+
    -> Validate any additional features used (e.g., technical indicators like RSI or MACD) to ensure they are computed correctly.
 
 Error Handling
